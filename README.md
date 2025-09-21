@@ -1,4 +1,4 @@
-![dengzijun的基本信息](https://luogu-card.vercel.app/about?id=387836)
+![Xudongning的基本信息](https://luogu-card.vercel.app/about?id=1636821)
 
 此卡片用于显示一个用户的基本信息，包括用户类型、关注、咕值排名、个性签名。
 
