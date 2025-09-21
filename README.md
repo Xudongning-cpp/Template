@@ -1,4 +1,4 @@
-[![Xudongning 的基本信息](https://luogu-card.vercel.app/about?id=1636821)](https://github.com/cyrxdzj/luogu-card)
+[![Xudongning 的基本信息](https://luogu-card.vercel.app/about?id=1636821)]([https://luogu.com/](https://www.luogu.com.cn/user/1636821))
 
 此卡片用于显示一个用户的基本信息，包括用户类型、关注、咕值排名、个性签名。
 
