@@ -1,104 +1,136 @@
-# Template
+![dengzijun的基本信息](https://luogu-card.vercel.app/about?id=387836)
 
-## 库简介
+此卡片用于显示一个用户的基本信息，包括用户类型、关注、咕值排名、个性签名。
 
-这是我个人的算法竞赛模板库。
+具体使用方法如下：
 
-## 库特点
+1. 仅使用图片：直接复制以下内容到任意 markdown 编辑器中，并将`?id=`后面的数字更改为自己的 id 即可（id是洛谷的用户编号）。
 
-1. 速度极快
+   ```markdown
+   ![dengzijun的基本信息](https://luogu-card.vercel.app/about?id=387836)
+   ```
 
-2. 使用方便
+2. 使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。
+
+   ```markdown
+   [![dengzijun的基本信息](https://luogu-card.vercel.app/about?id=387836)](https://github.com/cyrxdzj/luogu-card)
+   ```
+
+### 练习情况
+
+![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836)
+
+练习情况可以自动获取用户的数据，但是前提是没有开启“完全隐私保护”。
+
+具体使用方法如下：
+
+1. 仅使用图片：直接复制以下内容到任意 markdown 编辑器中，并将`?id=`后面的数字更改为自己的 id 即可（id是洛谷的用户编号）。
+
+   ```markdown
+   ![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836)
+   ```
+
+2. 使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。
+
+   ```markdown
+   [![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836)](https://github.com/cyrxdzj/luogu-card)
+   ```
+
+### 咕值信息
+
+![dengzijun的咕值信息](https://luogu-card.vercel.app/guzhi?id=387836)
+
+咕值信息一般无法自动获取数据，如果需要必须要提供cookie，但是这种方法十分不安全，并且不方便。所以获取咕值卡片可能需要手动输入咕值信息，具体使用方法如下：
+
+复制以下内容到任意 markdown 编辑器中，并将 `?id=`后面的数字更改为自己的 id，将`scores=`后面更换为自己的咕值信息，一共 5 个数字，用逗号分隔。
+
+1. 仅使用图片：复制以下内容到任意 markdown 编辑器中，并将 `?id=`后面的数字更改为自己的 id，将`scores=`后面更换为自己的咕值信息，一共 5 个数字（分别代表基础信用、练习情况、社区贡献、比赛情况、获得成就），用英文半角逗号分隔。
+
+   ```markdown
+   ![dengzijun的咕值信息](http://luogu-card.vercel.app/guzhi?id=387836&scores=100,70,25,45,0)
+   ```
    
-## 库特色
-
-1. 大值域的线性空间线段树（ `CompressedTree` 维护 `0~1e18` 范围的权值线段树，空间复杂度正比于操作次数）
-
-2. 动态大小的 `bitset` （ `DynamicBitset` 效率与静态大小的 `bitset` 持平）
-
-3. 可以动态维护全局半群信息的双向队列（ `Deque` 完爆 `std::deque` ）
-
-4. 可以维护区间加定值、区间加一次函数、区间加 `k` 次函数的树状数组 （ `KBIT` ）
-
-5. 当只有邻项合并操作时，严格线性时间复杂度的并查集（ ``LinearDSU`` ）
-
-6. 线性时间初始化， $O(1)$ 查询区间最值的状压 `RMQ` （ `掩码RMQ` ）
-
-7. 支持区间翻转、区间剪切合并，同时维护区间半群信息的平衡树（ 单向AVL树 ， 单向Splay树 ）
-
-8.查询速度极快的单点修改、区间查询线段树（`MonoZkw`）
-
-9. 在二维、三维以及更高维度上，维护半群信息（可以带修）的多维表/树（ `MultiDimSegTree` ）
-
-10. 通过编写 `node` 以实现自定义操作的势能线段树（ `SegmentBeat` ）
-
-11. 支持区间排序，并维护区间半群信息的线段树/平衡树 （ `SortFHQ` ， `SortSeg`  ）
-
-12. 线性时间初始化， 平均 $O(1)$ 查询区间半群信息的根树（ `SqrtTree` ）
-
-13. 单点加修改、区间和查询速度极快，碾压树状数组的数据结构 （ `WTree` ）
-
-14. 各种存储结构和算法执行器独立分开的图模板；
-
-15. 动态/静态模数的、32位/64位模数的、使用/不使用蒙哥马利模乘的 ``modint`` ；
-
-16. 运用了蒙哥马利模乘的运行极快的质数判定（ “PrimeCheck” ）
-
-17. 运用了蒙哥马利模乘的运行极快的因数分解（ `Pollard Rho` ）
-
-18. 支持基于范围遍历的数论分块 （ ``SqrtDecomposition`` ）
-
-19. 支持自定义个数、种类的模数的序列哈希（ ``序列哈希`` ， ``序列多哈希`` ）
-
-20. 支持回滚操作的 `KMP`，回文自动机；
-
-21. 线性时间复杂度的后缀数组；
-
-22. 通过编写 `node` 以实现自定义操作的动态树（ `GBT` ， `LCT`  ）
-
-23. 结合其他模板，快速制造出各种树套树数据结构的控制器（ `LeveledBITManipulator` ， `LeveledZkwManipulator` ，`LeveledSegManipulator`）
-
-24. 高度抽象的数位 `dp` 模板；
-
-25. 线性空间同时维护最大值和最小值的堆（ `MinMaxHeap` ）；
-
-26. 支持对交换幺半群进行子矩形修改、子矩形查询的二维线段树；
-
-27. 实用的 `leetcode` 输入输出工具，支持网页端的同样格式的输入输出数据。
-
-## 常见问题
-
-1. 我的编程环境非常老旧，看到你的模板库代码花里胡哨的，能运行起来吗？
-
-   本模板库现已放宽对语言环境的要求，绝大多数模板可使用我的模板库。
-
-2. 在 `LCT` 和 `GBT` 等一些模板里，看到 `MAX_NODE` 参数，这是什么意思？
-
-   在这些模板里，通过 `MAX_NODE` 控制全局内存池的大小，，从这个全局内存池向不同的树对象分配结点。
-
-3. 在模板里，填写的 `MAX_NODE` 是否越大越好？如果是多组测试，是否每组测试重新构造一个数据结构对象就会触发 $O(MAXNODE)$ 的初始化导致超时？
-
-   以下回答针对你的结点类型为平凡类型的情况（无构造函数，无初始值）。
-
-    `MAX_NODE` 相关联的是结点内存池的大小，所以并不会出现每次构造一个数据结构对象，就导致内存池初始化的情况。
-
-    `MAX_NODE` 并非越大越好，当 `MAX_NODE` 过大时，编译可能会失败。只要编译能通过，那么在此范围内 `MAX_NODE` 多大都没关系，也不会有任何的时间开销。
+2. 使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。
+   ```markdown
+   [![dengzijun的咕值信息](http://luogu-card.vercel.app/guzhi?id=387836&scores=100,70,25,45,0)](https://github.com/cyrxdzj/luogu-card)
+   ```
    
-4. 线段树只能有求和的功能吗？
 
-   本模板库非常重视模板的泛化程度。
+注意，若程序检测到咕值排名在1000名以内，则程序会自动从“咕值排名”中获取咕值。若获取成功，程序将无视用户输入。不过此功能偶尔会出BUG，所以最好还是手动设置一下咕值吧。
+
+另外，使用`update_time`参数可以自己指定咕值卡片上的更新时间，格式是一个正整数，代表你想指定的时间的伦敦格林尼治时间距离1970年1月1日00:00的毫秒数。提示：在JavaScript语言中，`new Date().getTime()`可以获取这个值。但是，只有在程序无法从“咕值排名”中获取咕值时才会采信这个输入。
+
+
+### 自定义选项
+
+使用卡片时，支持设定自定义效果选项，可以组合使用。
+
+1. **隐藏标题**，只需在链接最后带上`&hide_title=true`即可，例如：
+
+   ```markdown
+   ![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836&hide_title=true)
+   ```
+
+   效果：
+
+   ![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836&hide_title=1)
+
+2. **黑暗模式**，只需在链接最后带上`&dark_mode=true`即可，例如：
+
+   ```markdown
+   ![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836&dark_mode=true)
+   ```
+
+   效果：
+
+   ![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836&dark_mode=true)
+3. **自定义宽度**，默认500，限制宽度在500到1920之间，只需在链接最后带上`&card_width=需要的宽度`即可，例如：
+
+   ```markdown
+   ![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836&card_width=750)
+   ```
+
+   效果：
+
+   ![dengzijun的练习情况](https://luogu-card.vercel.app/practice?id=387836&card_width=750)
    
-   一般来说，包括线段树在内的维护半群的数据结构，天然带有 `Min` ， `Max` ， `Gcd` ， `Lcm` ， `BitAnd` ， `BitOr` ， `BitXor` 以及 `Sum` 这八种实例类型。如果有额外的需求，可以通过 `make_` 系列来定义新的类型；或者传递自定义的 `Monoid` 半群类型。其他的容器也往往如此。
+4. **禁用缓存**，默认情况下，程序会有12小时的缓存。但是只需在链接最后带上`&disable_cache=true`即可禁用缓存，每次访问都将刷新。
 
-5. 线段树模板参数一大堆，填写起来老是报错？连类型名字都不能完整写出来该怎么办？
+## 自行部署
 
-   为了防止定义各种千奇百怪运算符的使用者在使用模板时，因为无法描述出模板的完整类型名称而困扰，所以特意编写了 `make_` 系列函数。如同 `std::make_pair` 以及 `std::make_tuple` 一般，只需要填写少量参数即可创建出复杂类型的模板。例如， `make_SegTree` 可以用来创建线段树；只要打出 `make_SegTree` 之后跟随 `IDE` 的智能提示进行相应的填写即可。
-   
-6. 用 `make_SegTree` 可以创建一颗线段树；但是如果我要在 `std::vector` 里存放十颗线段树，我还是得把类型全称写出来，可是我写不出来，怎么办？
+如果想要自行试验或者二次开发可以自行部署到自己的 vercel 服务器，登录 [vercel](https://vercel.com/) 后，点击下方按钮即可部署。
 
-   既然用 `make_SegTree` 可以创建出一颗线段树，那么可以用 `using NickName = decltype(make_SegTree<...>(...));` 来捕获这棵树的类型，并给它起个别名。接下来即可用 `std::vector<NickName>` 的方式存储十颗线段树。
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/cyrxdzj/luogu-card)
 
-7. 为什么使用 `StaticModInt64` ， `DynamicModInt64` 取模结果出错？
+## 如何参与贡献
 
-   本模板库要求 `gcc` 或者 `clang` 编译器的 `long double` 具有 `80` 个 `bit` 的 `size` ；可以通过 `std::numeric_limits<long double>::max()` 检查输出是否为 `pow(10, 4932)` 以上。如果不够，那么基于 `long double` 进行的计算就可能因精度不足而出错。
-   
+#### 提供bug反馈或建议
+
+使用 [issue](https://github.com/cyrxdzj/luogu-card/issues) 反馈bug时，尽可能详细描述 bug 及其复现步骤
+
+#### 贡献代码的步骤
+
+1. fork项目到自己的repo
+2. 把fork过去的项目也就是你的项目clone到你的本地
+3. 修改代码
+4. commit后push到自己的库
+5. 在Github首页可以看到一个 pull request 按钮，点击它，填写一些说明信息，然后提交即可。
+6. 等待作者合并
+
+## 其他
+
+如果对你有所帮助的话，希望能在右上角点一个 star (★ ω ★)
+
+## LICENSE
+
+[![GNU Lesser General Public License v2.1](https://badgen.net/github/license/cyrxdzj/luogu-card)](https://github.com/cyrxdzj/luogu-card/blob/master/LICENSE)
+
+## 镜像仓库
+
+~~要不是vercel不支持Gitee只支持Github，我也不会出现在这里了~~
+
+本仓库在码云Gitee上创建了一个[镜像仓库](https://gitee.com/cyrxdzj/luogu-card)，但会有同步延迟。也可以访问位于Github的[源仓库](https://github.com/cyrxdzj/luogu-card)。
+
+[![star](https://gitee.com/cyrxdzj/luogu-card/badge/star.svg?theme=dark)](https://gitee.com/cyrxdzj/luogu-card/stargazers)
+
+[![cyrxdzj/luogu-card](https://gitee.com/cyrxdzj/luogu-card/widgets/widget_card.svg?colors=eae9d7,2e2f29,272822,484a45,eae9d7,747571)](https://gitee.com/cyrxdzj/luogu-card)
